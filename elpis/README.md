@@ -52,7 +52,7 @@ Using the MySQL root password provided by the Metasploit module and 0xlabs I log
 
 `SELECT '1' UNION ALL SELECT LOAD_FILE("c:\\flag.txt")`
 
-I realized this probably would have been quicker than using the RCE to read the flag - but I also verified from MySQL I could also not read the 'root' flag from c:\Users\*\Desktop. I was testing this just as 523 was looking for a query to run in phpMyAdmin to access the flags in another machine so the query came in handy for us in the end.
+I realized this probably would have been quicker than using the RCE to read the flag - but I also verified from MySQL I could not read the 'root' flag from c:\Users\\*\Desktop. I was testing this just as 523 was looking for a query to run in phpMyAdmin to access the flags in another machine so the query came in handy for us in the end.
 
 523 noticed there were ZPanel credentials stored in c:\zpanel\login_details.txt, which gave us the ability to log into the tool and discover two potential paths for further exploitation - the ability to add cron jobs, and the ability to add users to the FTP server.
 
