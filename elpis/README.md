@@ -60,7 +60,7 @@ I realized this probably would have been quicker than using the RCE to read the 
 
 I had seen the server was running FileZilla so I added a few accounts. The FTP server wasn't accessible remotely but perhaps it was available locally. The fact that a PuTTY executable had been planted also gave a hint that this was the route to pursue. We researched the ability to run a long string of FTP commands from the command line but ultimately I determined it would be best if we had an interactive web shell I could plant with the original exploit and run remote FTP commands over HTTP. I needed something that not only allowed me to run commands and display the output, but interact with a program during execution so I could cd around the directories and find the flag.
 
-As I was trying to craft this, 523 was planting a cron job to copy files out of all the Windows user's Desktop folders into c:\ in hopes that maybe there was a Windows Service with the proper credentials running. Unfortunately as we were close on these two paths, time ran out in the CTF.
+As I was trying to craft this (weevely would have been a good choice,) 523 was planting a cron job to copy files out of all the Windows user's Desktop folders into c:\ in hopes that maybe there was a Windows Service with the proper credentials running. Unfortunately as we were close on these two paths, time ran out in the CTF.
 
 ### Other thoughts:
 
