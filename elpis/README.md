@@ -71,3 +71,5 @@ This was also my first time using an Armitage team server. Whenever I have used 
 We discovered we couldn't connect back to our own machines from the servers... but I discovered the firewall seemed to be letting DNS queries through by running a ping command (the pings didn't go through, but DNS resolved). We potentially could have planted a Windows EXE of Dig on Elpis and overridden the DNS server to get a reverse DNS shell running. This occurred to me much later on but something to keep in mind for the future.
 
 ![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/ping.png "ping")
+
+Lastly, to my knowledge we didn't test whether the servers could communicate with each other. I know we had a full working shell on at least one other machine. I began to wonder after the CTF was over if we could have run the command line ftp client from that shell into Elpis.
