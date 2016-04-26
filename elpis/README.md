@@ -64,7 +64,7 @@ As I was trying to craft this, 523 was planting a cron job to copy files out of 
 
 ### Other thoughts:
 
-I really liked the format of getting points for obtaining a user accounts on the machine, and more points for root or Adminstrator. This allowed it to be a jeopardy style competition but provided a little more realism as you were finding a way into the machine and then escalating priviledges.
+I really liked the format of getting points for obtaining a user accounts on the machine, and more points for root or Adminstrator. This allowed it to be a jeopardy style competition but provided a little more realism as you were finding a way into the machine and then escalating privileges.
 
 This was also my first time using an Armitage team server. Whenever I have used Metasploit in the past I typically stick to msfconsole but I could see how the ability to share scans, credentials, and shells on the hosts really could save a lot of work in a collaborative environment. I wasn't super familiar with how to best make use of the collaboration but I certainly am going to take some time to learn more about it.
 
