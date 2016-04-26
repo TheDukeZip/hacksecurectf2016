@@ -32,9 +32,11 @@ Once I was able to run shell commands on the host it was trivial to read the fla
 
 ![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/userflag.png "user flag")
 
-The web server didn't have permissions to access the Desktop folders of any users to retrieve the 'root' flag. Running psexec was also fruitless as it required Administrator credentials.
+The web server didn't have permissions to access the Desktop folders of any users to retrieve the 'root' flag. Running psexec / runas were also fruitless as they required Administrator credentials.
 
 ![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/diradam.png "dir adam")
+
+![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/runas.png "runas")
 
 Other observations at this point was there was a PuTTY executable located in c:\ and two primary users where the root flag may be stored, adam and Admin. FileZilla was running on the server as well. Server was running Windows 8.
 
@@ -44,7 +46,7 @@ Other observations at this point was there was a PuTTY executable located in c:\
 
 ![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/tasklist.png "tasklist")
 
-![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/tasklist.png "ver")
+![alt text](https://raw.githubusercontent.com/thedukezip/hacksecurectf2016/master/elpis/images/ver.png "ver")
 
 Using the MySQL root password provided by the Metasploit module and 0xlabs I logged into phpMyAdmin at http://192.168.131.6/etc/apps/phpmyadmin/ and verified I could also read the user flag with the SQL query 
 
