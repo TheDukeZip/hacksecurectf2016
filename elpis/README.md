@@ -62,7 +62,7 @@ I had seen the server was running FileZilla so I added a few accounts. The FTP s
 
 As I was trying to craft this, 523 was planting a cron job to copy files out of all the Windows user's Desktop folders into c:\ in hopes that maybe there was a Windows Service with the proper credentials running. Unfortunately as we were close on these two paths, time ran out in the CTF.
 
-Other thoughts:
+### Other thoughts:
 
 I really liked the format of getting points for obtaining a user accounts on the machine, and more points for root or Adminstrator. This allowed it to be a jeopardy style competition but provided a little more realism as you were finding a way into the machine and then escalating priviledges.
 
